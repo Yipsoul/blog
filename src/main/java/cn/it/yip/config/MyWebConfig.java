@@ -25,7 +25,7 @@ public class MyWebConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //添加资源目录映射
-        registry.addResourceHandler(staticAccessPath).addResourceLocations(uploadFolder);
+        registry.addResourceHandler(staticAccessPath).addResourceLocations("./"+uploadFolder);
     }
 
     @Override
