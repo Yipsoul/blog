@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/dist/semantic.min.css}">
+    <link rel="stylesheet" href="../static/css/main.css" th:href="@{/css/main.css}">
+    <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
+    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/YipSoul/live2d-widget/autoload.js"></script>
+    <title th:replace="${title}">博客详情</title>
+</head>
+
+<body>
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small animated fadeInDown">
+    <div class="ui  container">
+        <div class="ui inverted secondary stackable menu">
+            <i class=" china flag"></i>
+            <h2 class="ui teal header item">YipSouL</h2>
+            <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i
+                    class="mini home icon"></i>首页</a>
+            <a href="#" th:href="@{/type.html}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i
+                    class="mini idea icon"></i>分类</a>
+            <a href="#" th:href="@{/tags.html}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i
+                    class="mini tags icon"></i>标签</a>
+            <a href="#" th:href="@{/archives.html}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i
+                    class="mini clone outline icon"></i>归档</a>
+            <a href="#" th:href="@{/about.html}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i
+                    class="user circle icon"></i>关于我</a>
+            <!-- 搜索框 -->
+            <div class="m-item right item m-mobile-hide">
+                <form id="search-form" name="search" action="#" th:action="@{/search}" method="post">
+                <div class="ui icon inverted transparent input ">
+                    <input type="text" placeholder="Search..." name="queryValue" th:value="${queryValue}">
+                    <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                </div>
+                </form>
+            </div>
+            <a href="#" class="m-button ui black icon button m-right-top m-mobile-show">
+                <i class="sidebar icon"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+<footer th:fragment="foot" class="ui inverted vertical segment m-padded-tb-massive ">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" class="ui rounded image"
+                             alt="" style="width: 140px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin m-opacity-mini" th:text="#{my.email}"></a>
+                    <a href="#" class="item m-text-thin m-opacity-mini" th:text="#{my.wechat}"></a>
+                    <a href="#" class="item m-text-thin m-opacity-mini" th:text="#{my.qq}"></a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+                <p class="m-text-thin m-text-spaced m-text-opacity-mini">
+                    大家好，这是我的个人博客，会分享各种关于java，后端，与生活相关的任何内容，希望大家多多关注！！！
+                </p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny m-opacity-tiny">Copyright © 2019 YipChungWing
+            Designed by
+            YipChungWing</p>
+    </div>
+</footer>
+<th:block th:fragment="script">
+    <script src="../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+    <script>
+    </script>
+    <script src="../static/lib/scroll/scrollTo.min.js" th:src="@{/lib/scroll/scrollTo.min.js}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js" th:src="@{/dist/semantic.min.js}"></script>
+    <script type="text/javascript" src="../static/js/mouse-effect.js" th:src="@{/js/mouse-effect.js}"></script>
+    <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+    <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+    <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+    <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+
+</th:block>
+</body>
+<script>
+    $('#search-form').form({
+        fields: {
+            // 要搜索的内容
+            title: {
+                identifier: 'queryValue',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入要搜索的内容哦！',
+                }
+                ]
+            },
+        }
+    });
+
+</script>
+</html>
