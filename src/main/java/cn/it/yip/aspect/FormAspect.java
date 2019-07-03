@@ -57,10 +57,10 @@ public class FormAspect {
         //查询redis判断是否有该值，如果没有，直接继续执行，
         if (StringUtils.isBlank(redisTemplate.opsForValue().get(FORM_COMMENT + requestIp))) {
             Object o = point.proceed();
-            //如果有。抛出异常
             redisTemplate.opsForValue().set(FORM_COMMENT + requestIp, requestIp, DEFAULT_TIME, TimeUnit.SECONDS);
             return o;
         } else {
+            //如果有。抛出异常
             log.error("用户重复提交表单 , IP : [{}]",requestIp);
             throw new BaseException(ExceptionEnum.HANDLE_TOO_FAST);
         }

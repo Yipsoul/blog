@@ -1,12 +1,19 @@
 spring:
   thymeleaf:
-    cache: true #关闭模版引擎缓存，否则测试没效果
+    cache: false #关闭模版引擎缓存，否则测试没效果
     encoding: UTF-8
     mode: HTML5
   profiles:
-    active: pro #自定义使用开发环境或生产环境，
+    active: dev #自定义使用开发环境或生产环境，
   mvc:
     favicon:
       enabled: false
 server:
   port: 80
+  comment.avatar: /images/boy.png
+  #静态资源对外暴露的访问路径
+  file.staticAccessPath: /api/file/**
+  #文件上传目录（注意Linux和Windows上的目录结构不同）
+  #file.uploadFolder=/root/uploadFiles/
+  file.uploadFolder: d://uploadFiles/
+  myblog.url: https://yip.mynatapp.cc

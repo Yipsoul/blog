@@ -19,8 +19,8 @@ import java.util.concurrent.TimeUnit;
 public class VisitInterceptor implements HandlerInterceptor {
     private final long REQUEST_COUNT = 1;//请求次数
     private final String REQUEST = "request:";
-    private final Long DEFAULT_TIME_OUT = 5L;//设置Key的超时时间
-    private final Long MOST_COUNT = 5L;//最多请求次数
+    private final Long DEFAULT_TIME_OUT = 30L;//设置Key的超时时间
+    private final Long MOST_COUNT = 100L;//最多请求次数
     @Autowired
     private StringRedisTemplate redisTemplate;
 
@@ -30,7 +30,7 @@ public class VisitInterceptor implements HandlerInterceptor {
         //访问次数加1
         long count = redisTemplate.opsForValue().increment(REQUEST + ip, REQUEST_COUNT);
         if (count == REQUEST_COUNT) {
-            redisTemplate.expire(REQUEST + ip, 5, TimeUnit.SECONDS);
+            redisTemplate.expire(REQUEST + ip, DEFAULT_TIME_OUT, TimeUnit.SECONDS);
         }
         //如果请求大于最大次数
         if (count > MOST_COUNT) {

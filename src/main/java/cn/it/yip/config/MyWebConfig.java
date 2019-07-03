@@ -25,7 +25,8 @@ public class MyWebConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //添加资源目录映射
-        registry.addResourceHandler(staticAccessPath).addResourceLocations("./"+uploadFolder);
+        //TODO 当部署到linux服务器的时候addResourceLocations里面的参数要改成("file:")
+        registry.addResourceHandler(staticAccessPath).addResourceLocations("file:///"+uploadFolder);
     }
 
     @Override
@@ -33,7 +34,7 @@ public class MyWebConfig implements WebMvcConfigurer {
         //添加登录后台拦截
         registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/admin/**")
                 .excludePathPatterns("/admin", "/admin/login", "/admin/editPassword", "/admin/changePassword");
-        //registry.addInterceptor(this.getVisistInterceptor()).addPathPatterns("/**");
+        registry.addInterceptor(this.getVisistInterceptor()).addPathPatterns("/**");
 
     }
     @Bean
