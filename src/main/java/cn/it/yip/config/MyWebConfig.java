@@ -26,7 +26,7 @@ public class MyWebConfig implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //添加资源目录映射
         //TODO 当部署到linux服务器的时候addResourceLocations里面的参数要改成("file:")
-       registry.addResourceHandler(staticAccessPath).addResourceLocations("file:"+uploadFolder);
+       registry.addResourceHandler(staticAccessPath).addResourceLocations("file:///"+uploadFolder);
     }
 
     @Override
