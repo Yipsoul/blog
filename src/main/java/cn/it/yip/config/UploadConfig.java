@@ -22,7 +22,7 @@ public class UploadConfig {
     @Bean
     MultipartConfigElement multipartConfigElement() {
         MultipartConfigFactory factory = new MultipartConfigFactory();
-        factory.setLocation(uploadFolder);
+       factory.setLocation(uploadFolder);
         //文件最大
         factory.setMaxFileSize("5MB");
         // 设置总上传数据总大小
