@@ -100,11 +100,14 @@ public class BlogService {
         blog.setUser((User) session.getAttribute("user"));
         Type byID = typeServcie.findByID(blog.getType().getId());
         blog.setType(byID);
-        String[] strings = StringUtils.split(blog.getTagIds(), ",");
-        long[] longs = Arrays.stream(strings).mapToLong(s -> Long.valueOf(s)).toArray();
-        List<Long> list = CollectionUtils.arrayToList(longs);
-        List<Tag> tags = tagService.findByIdS(list);
-        blog.setTags(tags);
+        //如果标签id不为空，则查询数据库设置属性
+        if(StringUtils.isNotBlank(blog.getTagIds())){
+            String[] strings = StringUtils.split(blog.getTagIds(), ",");
+            long[] longs = Arrays.stream(strings).mapToLong(s -> Long.valueOf(s)).toArray();
+            List<Long> list = CollectionUtils.arrayToList(longs);
+            List<Tag> tags = tagService.findByIdS(list);
+            blog.setTags(tags);
+        }
         return this.blogRepository.saveAndFlush(blog);
     }
 

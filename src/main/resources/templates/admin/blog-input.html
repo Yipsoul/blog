@@ -61,6 +61,7 @@
 
         <!-- 表单 -->
         <form id="blog-form" class="ui form" th:object="${blog}" method="POST" action="#" th:action="@{/admin/blogs/add}">
+            <input type="hidden" name="views" th:value="${blog.views}">
             <input type="hidden" name="id" th:value="${blog.id}">
             <!-- 标题 -->
             <div class="field">
