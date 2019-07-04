@@ -153,3 +153,292 @@
 2019-07-04 00:02:58.932  INFO 7216 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Time-Consuming : 134 ms
 2019-07-04 00:02:58.932  INFO 7216 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================End=====================================
 
+2019-07-04 00:09:21.891  INFO 5180 --- [main] cn.it.yip.BlogApplication                : Starting BlogApplication on YipSouL with PID 5180 (D:\Idea-Project\blog\target\classes started by YipSouL in D:\Idea-Project\blog)
+2019-07-04 00:09:21.894 DEBUG 5180 --- [main] cn.it.yip.BlogApplication                : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-07-04 00:09:21.894  INFO 5180 --- [main] cn.it.yip.BlogApplication                : The following profiles are active: dev
+2019-07-04 00:09:22.591  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:09:22.592  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:09:22.680  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81ms. Found 5 repository interfaces.
+2019-07-04 00:09:22.691  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:09:22.692  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:09:22.709  INFO 5180 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.BlogRepository.
+2019-07-04 00:09:22.709  INFO 5180 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.CommentRepository.
+2019-07-04 00:09:22.710  INFO 5180 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TagRepository.
+2019-07-04 00:09:22.710  INFO 5180 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TypeRepository.
+2019-07-04 00:09:22.711  INFO 5180 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.UserRepository.
+2019-07-04 00:09:22.711  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-07-04 00:09:23.033  INFO 5180 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9bfef87e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 00:09:23.407  INFO 5180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-07-04 00:09:23.428  INFO 5180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 00:09:23.428  INFO 5180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-04 00:09:23.631  INFO 5180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 00:09:23.631  INFO 5180 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1656 ms
+2019-07-04 00:09:23.819  INFO 5180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-04 00:09:23.864  INFO 5180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-04 00:09:23.865  INFO 5180 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-04 00:09:23.963  INFO 5180 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-04 00:09:24.115  INFO 5180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 00:09:24.270  INFO 5180 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2019-07-04 00:09:24.273  INFO 5180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 00:09:24.284  INFO 5180 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-07-04 00:09:24.311  INFO 5180 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-04 00:09:24.910  INFO 5180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 00:09:25.394  INFO 5180 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-04 00:09:26.040  INFO 5180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 00:09:26.083  WARN 5180 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 00:09:26.199  WARN 5180 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-04 00:09:26.233  INFO 5180 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-04 00:09:26.505  INFO 5180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-07-04 00:09:26.507  INFO 5180 --- [main] cn.it.yip.BlogApplication                : Started BlogApplication in 5.245 seconds (JVM running for 6.181)
+2019-07-04 00:11:30.828  INFO 5180 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 00:11:30.828  INFO 5180 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 00:11:30.840  INFO 5180 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-07-04 00:11:30.953  INFO 5180 --- [http-nio-80-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-07-04 00:11:30.954  INFO 5180 --- [http-nio-80-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-07-04 00:11:36.326  INFO 5180 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:11:36.327  INFO 5180 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/login', 描述信息description='登录用户接口',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminController.login', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[User{id=null, username='root', nickname='null', password='root', email='null', avatar='null', type=null, createTime=null, updateTime=null}, org.apache.catalina.session.StandardSessionFacade@7b68644f, {}]}
+2019-07-04 00:11:36.375  INFO 5180 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Response Args : "redirect:/admin"
+2019-07-04 00:11:36.375  INFO 5180 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Time-Consuming : 49 ms
+2019-07-04 00:11:36.375  INFO 5180 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:13:47.510  INFO 2832 --- [main] cn.it.yip.BlogApplication                : Starting BlogApplication on YipSouL with PID 2832 (D:\Idea-Project\blog\target\classes started by YipSouL in D:\Idea-Project\blog)
+2019-07-04 00:13:47.513 DEBUG 2832 --- [main] cn.it.yip.BlogApplication                : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-07-04 00:13:47.513  INFO 2832 --- [main] cn.it.yip.BlogApplication                : The following profiles are active: dev
+2019-07-04 00:13:48.305  INFO 2832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:13:48.306  INFO 2832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:13:48.418  INFO 2832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105ms. Found 5 repository interfaces.
+2019-07-04 00:13:48.435  INFO 2832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:13:48.438  INFO 2832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:13:48.460  INFO 2832 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.BlogRepository.
+2019-07-04 00:13:48.461  INFO 2832 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.CommentRepository.
+2019-07-04 00:13:48.461  INFO 2832 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TagRepository.
+2019-07-04 00:13:48.462  INFO 2832 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TypeRepository.
+2019-07-04 00:13:48.462  INFO 2832 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.UserRepository.
+2019-07-04 00:13:48.462  INFO 2832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-07-04 00:13:48.878  INFO 2832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e13dac9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 00:13:49.375  INFO 2832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-07-04 00:13:49.395  INFO 2832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 00:13:49.395  INFO 2832 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-04 00:13:49.593  INFO 2832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 00:13:49.593  INFO 2832 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1999 ms
+2019-07-04 00:13:49.852  INFO 2832 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-04 00:13:49.931  INFO 2832 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-04 00:13:49.933  INFO 2832 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-04 00:13:50.105  INFO 2832 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-04 00:13:50.339  INFO 2832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 00:13:50.505  INFO 2832 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2019-07-04 00:13:50.507  INFO 2832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 00:13:50.519  INFO 2832 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-07-04 00:13:50.560  INFO 2832 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-04 00:13:51.432  INFO 2832 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 00:13:52.049  INFO 2832 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-04 00:13:52.954  INFO 2832 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 00:13:53.014  WARN 2832 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 00:13:53.131  WARN 2832 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-04 00:13:53.168  INFO 2832 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-04 00:13:53.511  INFO 2832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-07-04 00:13:53.513  INFO 2832 --- [main] cn.it.yip.BlogApplication                : Started BlogApplication in 7.245 seconds (JVM running for 8.391)
+2019-07-04 00:13:55.568  INFO 2832 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 00:13:55.568  INFO 2832 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 00:13:55.577  INFO 2832 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-07-04 00:13:55.698  INFO 2832 --- [http-nio-80-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-07-04 00:13:55.699  INFO 2832 --- [http-nio-80-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-07-04 00:14:00.081  INFO 2832 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:14:00.082  INFO 2832 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/login', 描述信息description='登录用户接口',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminController.login', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[User{id=null, username='root', nickname='null', password='root', email='null', avatar='null', type=null, createTime=null, updateTime=null}, org.apache.catalina.session.StandardSessionFacade@6310c04b, {}]}
+2019-07-04 00:14:42.714  WARN 2832 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s104ms942µs409ns).
+2019-07-04 00:15:13.255  INFO 2832 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:15:13.256  INFO 2832 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/login', 描述信息description='登录用户接口',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminController.login', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[User{id=null, username='root', nickname='null', password='root', email='null', avatar='null', type=null, createTime=null, updateTime=null}, org.apache.catalina.session.StandardSessionFacade@75667ac0, {}]}
+2019-07-04 00:15:19.081  INFO 2832 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Response Args : "redirect:/admin"
+2019-07-04 00:15:19.081  INFO 2832 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Time-Consuming : 79001 ms
+2019-07-04 00:15:19.081  INFO 2832 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:15:23.396  INFO 2832 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : Response Args : "admin/index"
+2019-07-04 00:15:23.397  INFO 2832 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : Time-Consuming : 10142 ms
+2019-07-04 00:15:23.397  INFO 2832 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:17:04.803  INFO 12500 --- [main] cn.it.yip.BlogApplication                : Starting BlogApplication on YipSouL with PID 12500 (D:\Idea-Project\blog\target\classes started by YipSouL in D:\Idea-Project\blog)
+2019-07-04 00:17:04.805 DEBUG 12500 --- [main] cn.it.yip.BlogApplication                : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-07-04 00:17:04.806  INFO 12500 --- [main] cn.it.yip.BlogApplication                : The following profiles are active: dev
+2019-07-04 00:17:05.542  INFO 12500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:17:05.542  INFO 12500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:17:05.653  INFO 12500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100ms. Found 5 repository interfaces.
+2019-07-04 00:17:05.667  INFO 12500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:17:05.668  INFO 12500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:17:05.685  INFO 12500 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.BlogRepository.
+2019-07-04 00:17:05.685  INFO 12500 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.CommentRepository.
+2019-07-04 00:17:05.686  INFO 12500 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TagRepository.
+2019-07-04 00:17:05.687  INFO 12500 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TypeRepository.
+2019-07-04 00:17:05.687  INFO 12500 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.UserRepository.
+2019-07-04 00:17:05.688  INFO 12500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-07-04 00:17:06.093  INFO 12500 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5d461244] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 00:17:06.483  INFO 12500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-07-04 00:17:06.554  INFO 12500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 00:17:06.554  INFO 12500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-04 00:17:06.685  INFO 12500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 00:17:06.685  INFO 12500 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1839 ms
+2019-07-04 00:17:06.903  INFO 12500 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-04 00:17:06.959  INFO 12500 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-04 00:17:06.960  INFO 12500 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-04 00:17:07.085  INFO 12500 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-04 00:17:07.258  INFO 12500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 00:17:07.392  INFO 12500 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2019-07-04 00:17:07.396  INFO 12500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 00:17:07.404  INFO 12500 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-07-04 00:17:07.429  INFO 12500 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-04 00:17:08.206  INFO 12500 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 00:17:08.740  INFO 12500 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-04 00:17:09.367  INFO 12500 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 00:17:09.414  WARN 12500 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 00:17:09.521  WARN 12500 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-04 00:17:09.559  INFO 12500 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-04 00:17:09.807  INFO 12500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-07-04 00:17:09.809  INFO 12500 --- [main] cn.it.yip.BlogApplication                : Started BlogApplication in 5.747 seconds (JVM running for 6.863)
+2019-07-04 00:17:21.448  INFO 12500 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 00:17:21.449  INFO 12500 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 00:17:21.462  INFO 12500 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-07-04 00:17:21.595  INFO 12500 --- [http-nio-80-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-07-04 00:17:21.596  INFO 12500 --- [http-nio-80-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-07-04 00:17:27.269  INFO 12500 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:17:27.271  INFO 12500 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/login', 描述信息description='登录用户接口',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminController.login', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[User{id=null, username='root', nickname='null', password='root', email='null', avatar='null', type=null, createTime=null, updateTime=null}, org.apache.catalina.session.StandardSessionFacade@43d0c208, {}]}
+2019-07-04 00:17:32.505  INFO 12500 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Response Args : "admin/index"
+2019-07-04 00:17:32.505  INFO 12500 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Time-Consuming : 5236 ms
+2019-07-04 00:17:32.505  INFO 12500 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:18:22.737  INFO 4848 --- [main] cn.it.yip.BlogApplication                : Starting BlogApplication on YipSouL with PID 4848 (D:\Idea-Project\blog\target\classes started by YipSouL in D:\Idea-Project\blog)
+2019-07-04 00:18:22.740 DEBUG 4848 --- [main] cn.it.yip.BlogApplication                : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-07-04 00:18:22.741  INFO 4848 --- [main] cn.it.yip.BlogApplication                : The following profiles are active: dev
+2019-07-04 00:18:23.439  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:18:23.440  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:18:23.532  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84ms. Found 5 repository interfaces.
+2019-07-04 00:18:23.546  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:18:23.547  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:18:23.562  INFO 4848 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.BlogRepository.
+2019-07-04 00:18:23.563  INFO 4848 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.CommentRepository.
+2019-07-04 00:18:23.563  INFO 4848 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TagRepository.
+2019-07-04 00:18:23.564  INFO 4848 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TypeRepository.
+2019-07-04 00:18:23.564  INFO 4848 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.UserRepository.
+2019-07-04 00:18:23.564  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-07-04 00:18:23.935  INFO 4848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b510598d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 00:18:24.322  INFO 4848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-07-04 00:18:24.390  INFO 4848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 00:18:24.390  INFO 4848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-04 00:18:24.509  INFO 4848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 00:18:24.509  INFO 4848 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1723 ms
+2019-07-04 00:18:24.715  INFO 4848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-04 00:18:24.767  INFO 4848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-04 00:18:24.768  INFO 4848 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-04 00:18:24.890  INFO 4848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-04 00:18:25.070  INFO 4848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 00:18:25.206  INFO 4848 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2019-07-04 00:18:25.209  INFO 4848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 00:18:25.220  INFO 4848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-07-04 00:18:25.244  INFO 4848 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-04 00:18:25.920  INFO 4848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 00:18:26.408  INFO 4848 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-04 00:18:27.036  INFO 4848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 00:18:27.092  WARN 4848 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 00:18:27.205  WARN 4848 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-04 00:18:27.238  INFO 4848 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-04 00:18:27.482  INFO 4848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-07-04 00:18:27.484  INFO 4848 --- [main] cn.it.yip.BlogApplication                : Started BlogApplication in 5.648 seconds (JVM running for 6.992)
+2019-07-04 00:18:51.745  INFO 4848 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 00:18:51.745  INFO 4848 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 00:18:51.758  INFO 4848 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-07-04 00:18:51.873  INFO 4848 --- [http-nio-80-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-07-04 00:18:51.874  INFO 4848 --- [http-nio-80-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-07-04 00:18:52.483  INFO 4848 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:18:52.485  INFO 4848 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/login', 描述信息description='登录用户接口',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminController.login', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[User{id=null, username='root', nickname='null', password='root', email='null', avatar='null', type=null, createTime=null, updateTime=null}, org.apache.catalina.session.StandardSessionFacade@62455826, {}]}
+2019-07-04 00:18:52.580  INFO 4848 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Response Args : "admin/index"
+2019-07-04 00:18:52.581  INFO 4848 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Time-Consuming : 97 ms
+2019-07-04 00:18:52.581  INFO 4848 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:47:51.794  INFO 4848 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /192.168.56.101:6379
+2019-07-04 00:47:52.804  WARN 4848 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.56.101:6379
+2019-07-04 00:48:02.992  INFO 4848 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:48:12.998  WARN 4848 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:48:13.092  INFO 4848 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:48:23.096  WARN 4848 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:48:23.191  INFO 4848 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:48:33.194  WARN 4848 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:48:33.291  INFO 4848 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:48:43.299  WARN 4848 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:48:43.392  INFO 4848 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:48:53.395  WARN 4848 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:48:53.592  INFO 4848 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:49:03.594  WARN 4848 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:49:03.891  INFO 4848 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:49:13.893  WARN 4848 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:49:14.491  INFO 4848 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:49:24.495  WARN 4848 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:49:25.591  INFO 4848 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:49:35.594  WARN 4848 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:49:37.691  INFO 4848 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:49:47.693  WARN 4848 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:49:51.792  INFO 4848 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:50:01.794  WARN 4848 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:50:09.991  INFO 4848 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:50:19.993  WARN 4848 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:50:36.391  INFO 4848 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:50:46.393  WARN 4848 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:51:16.491  INFO 4848 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:51:26.493  WARN 4848 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:51:56.591  INFO 4848 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:52:06.594  WARN 4848 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:52:36.691  INFO 4848 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:52:46.693  WARN 4848 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:53:16.791  INFO 4848 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:53:26.792  WARN 4848 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:53:56.891  INFO 4848 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:54:06.893  WARN 4848 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:54:36.991  INFO 4848 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:54:46.995  WARN 4848 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:55:17.091  INFO 4848 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:55:27.093  WARN 4848 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:55:57.192  INFO 4848 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:56:07.194  WARN 4848 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:56:37.291  INFO 4848 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:56:47.293  WARN 4848 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:57:17.392  INFO 4848 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:57:27.395  WARN 4848 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:57:57.491  INFO 4848 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:58:07.492  WARN 4848 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:58:37.591  INFO 4848 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:58:47.593  WARN 4848 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:59:17.691  INFO 4848 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:59:27.696  WARN 4848 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:59:57.791  INFO 4848 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:00:07.793  WARN 4848 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:00:37.891  INFO 4848 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:00:47.892  WARN 4848 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:01:17.992  INFO 4848 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:01:27.994  WARN 4848 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:01:58.092  INFO 4848 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:02:08.095  WARN 4848 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:02:38.191  INFO 4848 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:02:48.197  WARN 4848 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:03:18.290  INFO 4848 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:03:28.293  WARN 4848 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:03:58.391  INFO 4848 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:04:08.393  WARN 4848 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:04:38.492  INFO 4848 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:04:48.495  WARN 4848 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:05:18.591  INFO 4848 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:05:28.593  WARN 4848 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:05:58.692  INFO 4848 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:06:08.693  WARN 4848 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:06:38.792  INFO 4848 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:06:48.795  WARN 4848 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:07:18.892  INFO 4848 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:07:28.894  WARN 4848 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:07:58.991  INFO 4848 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:08:08.993  WARN 4848 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:08:39.092  INFO 4848 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:08:49.094  WARN 4848 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
