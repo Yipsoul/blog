@@ -404,3 +404,68 @@ Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /192.
 2019-07-09 12:09:58.843  INFO 16204 --- [http-nio-80-exec-9] cn.it.yip.aspect.LogAspect               : Time-Consuming : 1 ms
 2019-07-09 12:09:58.843  INFO 16204 --- [http-nio-80-exec-9] cn.it.yip.aspect.LogAspect               : =================================End=====================================
 
+2019-07-09 12:15:09.899  INFO 16204 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /192.168.56.101:6379
+2019-07-09 12:15:10.909  WARN 16204 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.56.101:6379
+2019-07-09 12:15:21.093  INFO 16204 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:15:31.096  WARN 16204 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:15:31.193  INFO 16204 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:15:41.198  WARN 16204 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:15:41.293  INFO 16204 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:15:51.297  WARN 16204 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:15:51.394  INFO 16204 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:16:01.397  WARN 16204 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:16:01.493  INFO 16204 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:16:11.496  WARN 16204 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:16:11.694  INFO 16204 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:16:21.696  WARN 16204 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:16:21.993  INFO 16204 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:16:31.995  WARN 16204 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:16:32.593  INFO 16204 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:16:42.595  WARN 16204 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:16:43.693  INFO 16204 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:16:53.694  WARN 16204 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:16:55.793  INFO 16204 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:17:05.795  WARN 16204 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:17:09.894  INFO 16204 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:17:19.895  WARN 16204 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:17:28.093  INFO 16204 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:17:38.095  WARN 16204 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:17:54.493  INFO 16204 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:18:04.495  WARN 16204 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:18:34.594  INFO 16204 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:18:44.596  WARN 16204 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:19:14.693  INFO 16204 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:19:24.699  WARN 16204 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:19:54.794  INFO 16204 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:20:04.797  WARN 16204 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:20:34.894  INFO 16204 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:20:44.900  WARN 16204 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:21:14.994  INFO 16204 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:21:24.995  WARN 16204 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:21:55.093  INFO 16204 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:22:05.095  WARN 16204 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:22:35.194  INFO 16204 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:22:45.196  WARN 16204 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:23:15.293  INFO 16204 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:23:25.295  WARN 16204 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:23:55.394  INFO 16204 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:24:05.397  WARN 16204 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:24:35.494  INFO 16204 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:24:45.495  WARN 16204 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:25:15.593  INFO 16204 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:25:25.595  WARN 16204 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:25:55.693  INFO 16204 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:26:05.695  WARN 16204 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:26:35.794  INFO 16204 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:26:45.796  WARN 16204 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:27:15.894  INFO 16204 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:27:25.896  WARN 16204 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:27:55.994  INFO 16204 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:28:05.996  WARN 16204 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:28:36.093  INFO 16204 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:28:46.095  WARN 16204 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:29:16.194  INFO 16204 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:29:26.196  WARN 16204 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:29:56.293  INFO 16204 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-09 12:30:06.294  WARN 16204 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-09 12:30:36.393  INFO 16204 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
