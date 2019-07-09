@@ -1,18 +1,20 @@
 ### 一.个人博客功能思维导图
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190709232914679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY0OTA5MA==,size_16,color_FFFFFF,t_70)
-### 技术栈
+### 二.技术栈
 -	前端 ： JQuery + Semantic UI 框架
 -	后端 ： SpringBoot + SpringDataJpa + MySQL + Redis 
 
-### 开发工具与环境
+### 三.开发工具与环境
 -	Maven 3以上
 -	JDK8
 -	IDEA
 -	Redis 
 -	MySQL
 
+### 四.功能简介
+
 ---
-### 博客项目导入IDEA本地运行使用
+### 五.博客项目导入IDEA本地运行使用
 #### 1. 导入项目
 1. 到GitHub上下载项目 [个人博客下载](https://github.com/Yipsoul/blog)
 
