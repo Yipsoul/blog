@@ -40,9 +40,17 @@
 </nav>
 <nav>
 
+
     <img class="animated fadeIn m-mobile-hide"  th:src="@{/images/index-bg.jpg}" src="/static/images/index-bg.jpg" alt="">
 </nav>
 <!-- 内容 -->
+<div id="waypoint">
+<div id="toolbar" class="m-fixed m-right-bottom m-padded" style="display: none !important;">
+    <div class="ui vertical icon buttons ">
+        <div id="topButton" class="ui icon button"><i class="chevron up icon"></i></div>
+    </div>
+</div>
+</div>
 <!-- 列表 -->
 <div class="m-container m-padded-tb-large animated bounceInUp">
     <!-- 内容頭部 -->
@@ -709,7 +717,23 @@
 <script>
     $('.m-button').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
-    })
+    });
+
+    // 平滑滚动
+    $('#topButton').click(function () {
+        console.log('123');
+        $(window).scrollTo(0, 1000);
+    });
+    let waypoint = new Waypoint({
+        element: document.getElementById('waypoint'),
+        handler: function (direction) {
+            if (direction == 'down') {
+                $('#toolbar').show(800).attr("style","none");
+            } else {
+                $("#toolbar").hide(800);
+            }
+        }
+    });
 </script>
 </body>
 

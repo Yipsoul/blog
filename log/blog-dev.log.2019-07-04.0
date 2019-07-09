@@ -1,0 +1,698 @@
+2019-07-04 00:00:18.321  WARN 7440 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m54s876ms70µs891ns).
+2019-07-04 00:02:14.474  INFO 7216 --- [main] cn.it.yip.BlogApplication                : Starting BlogApplication on YipSouL with PID 7216 (D:\Idea-Project\blog\target\classes started by YipSouL in D:\Idea-Project\blog)
+2019-07-04 00:02:14.477 DEBUG 7216 --- [main] cn.it.yip.BlogApplication                : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-07-04 00:02:14.477  INFO 7216 --- [main] cn.it.yip.BlogApplication                : The following profiles are active: dev
+2019-07-04 00:02:15.289  INFO 7216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:02:15.290  INFO 7216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:02:15.393  INFO 7216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94ms. Found 5 repository interfaces.
+2019-07-04 00:02:15.424  INFO 7216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:02:15.429  INFO 7216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:02:15.463  INFO 7216 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.BlogRepository.
+2019-07-04 00:02:15.464  INFO 7216 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.CommentRepository.
+2019-07-04 00:02:15.464  INFO 7216 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TagRepository.
+2019-07-04 00:02:15.465  INFO 7216 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TypeRepository.
+2019-07-04 00:02:15.465  INFO 7216 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.UserRepository.
+2019-07-04 00:02:15.465  INFO 7216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-07-04 00:02:16.018  INFO 7216 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$501afc80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 00:02:16.575  INFO 7216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-07-04 00:02:16.665  INFO 7216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 00:02:16.665  INFO 7216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-04 00:02:16.894  INFO 7216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 00:02:16.895  INFO 7216 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2373 ms
+2019-07-04 00:02:17.159  INFO 7216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-04 00:02:17.234  INFO 7216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-04 00:02:17.236  INFO 7216 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-04 00:02:17.445  INFO 7216 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-04 00:02:17.626  INFO 7216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 00:02:17.817  INFO 7216 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2019-07-04 00:02:17.825  INFO 7216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 00:02:17.836  INFO 7216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-07-04 00:02:17.872  INFO 7216 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-04 00:02:18.783  INFO 7216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 00:02:19.364  INFO 7216 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-04 00:02:20.095  INFO 7216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 00:02:20.138  WARN 7216 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 00:02:20.245  WARN 7216 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-04 00:02:20.278  INFO 7216 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-04 00:02:20.543  INFO 7216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-07-04 00:02:20.545  INFO 7216 --- [main] cn.it.yip.BlogApplication                : Started BlogApplication in 6.953 seconds (JVM running for 8.166)
+2019-07-04 00:02:23.001  INFO 7216 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 00:02:23.001  INFO 7216 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 00:02:23.011  INFO 7216 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-07-04 00:02:23.147  INFO 7216 --- [http-nio-80-exec-3] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-07-04 00:02:23.148  INFO 7216 --- [http-nio-80-exec-3] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-07-04 00:02:29.278  INFO 7216 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:02:29.280  INFO 7216 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/login', 描述信息description='登录用户接口',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminController.login', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[User{id=null, username='YipSouL', nickname='null', password='123456', email='null', avatar='null', type=null, createTime=null, updateTime=null}, org.apache.catalina.session.StandardSessionFacade@39595306, {}]}
+2019-07-04 00:02:29.344  INFO 7216 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : Response Args : "redirect:/admin"
+2019-07-04 00:02:29.344  INFO 7216 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : Time-Consuming : 66 ms
+2019-07-04 00:02:29.344  INFO 7216 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:02:35.793  INFO 7216 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:02:35.793  INFO 7216 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/login', 描述信息description='登录用户接口',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminController.login', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[User{id=null, username='YipSouL', nickname='null', password='yzr661024', email='null', avatar='null', type=null, createTime=null, updateTime=null}, org.apache.catalina.session.StandardSessionFacade@39595306, {}]}
+2019-07-04 00:02:35.827  INFO 7216 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Response Args : "admin/index"
+2019-07-04 00:02:35.827  INFO 7216 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Time-Consuming : 34 ms
+2019-07-04 00:02:35.827  INFO 7216 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:02:37.497  INFO 7216 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:02:37.497  INFO 7216 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/blogs/list', 描述信息description='查询所有博客',httpMethod='GET', classMethod='cn.it.yip.web.admin.AdminBlogController.blogList', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[BlogVo(title=null, recommend=false, typeId=null), Page request [number: 0, size 30, sort: updateTime: ASC], {blogVo=BlogVo(title=null, recommend=false, typeId=null), org.springframework.validation.BindingResult.blogVo=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2019-07-04 00:02:37.586  INFO 7216 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Response Args : "admin/blogs"
+2019-07-04 00:02:37.586  INFO 7216 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Time-Consuming : 89 ms
+2019-07-04 00:02:37.586  INFO 7216 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:02:40.344  INFO 7216 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:02:40.344  INFO 7216 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/blogs/edit/3', 描述信息description='修改博客',httpMethod='GET', classMethod='cn.it.yip.web.admin.AdminBlogController.editTag', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[3, {}]}
+2019-07-04 00:02:40.366  INFO 7216 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : Response Args : "admin/blog-input"
+2019-07-04 00:02:40.366  INFO 7216 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : Time-Consuming : 22 ms
+2019-07-04 00:02:40.366  INFO 7216 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:02:43.412  INFO 7216 --- [http-nio-80-exec-6] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:02:43.413  INFO 7216 --- [http-nio-80-exec-6] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/blogs/add', 描述信息description='添加博客',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminBlogController.add', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[Blog(type=Type{id=2, typeName='null'}, user=null, tags=[], id=3, title=Redis数据结构探索之字典, description=一个星期之前闲着蛋疼想自己手写一个简单的spring，才发现是多么的不容易，在网上找了不少资料，也厚着脸皮问了不少大佬，还是非常不容易的写了一个简单的SpringIOC基于XML配置，注解的实在是太难了（主要还是自己太菜了），完全是知识的空白区，比如说spring的ASM啥的。。现在还在研究中。。, content=## Redis里面的字典，又叫符号表、关联数组、或映射，是一种用于保存key-value键值对结构的抽象数据结构，类似于java中的hashmap。
+### 但是C语言里面还是没有这种数据结构> -- <!哈哈，所以Redis自己构建了字典的实现。
+#### Redis里的字典应用介绍：
+- **Redis的数据库就是使用字典来作为底层实现，增删改查也是构建在对字典的操作之上的。**
+- **字典是哈希键的底层实现之一，当一个哈希键的键值对比较多，或者键值中的元素字符串比较长的时候，Redis就会使用字典作为哈希键的底层实现。**
+- **本篇主要写字典的实现，后续继续写的话会写字典在Redis中的应用。**
+-----
+## 字典的实现
+**Redis的字典底层实现是哈希表。一个哈希表里有多个哈希节点。每个哈希节点保存着字典中的一个键值对。**
+
+ ## 1. 哈希表
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190415021831662.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY0OTA5MA==,size_16,color_FFFFFF,t_70)
+-  table属性：是一个数组，数组中的每个元素都是指向dictEntry结构的指针，每个dicEntry结构都保存一个键值对。
+- size属性：记录着哈希表的大小，也是数组的大小。
+- used属性：记录着该哈希表已有节点的数量。
+- sizemask属性：总是等于size - 1，该属性和哈希值决定一个键应该被放到数组table中的哪个位置。
+## 2. 哈希表节点
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190415022738108.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY0OTA5MA==,size_16,color_FFFFFF,t_70)
+- key属性：保存键值对中的键。
+- v属性：保存键值对中的值，也可以是一个指针，或者是一个uint64_t整数，或者是一个int64整数。
+- next属性：是指向用于另外一个哈希表节点的指针，这样可以将多个哈希值相同的键值连接在一起，用来解决键的冲突问题。
+#### 下图展示如何使用next指针解决将两个索引值相同的键连接在一起。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190415223424372.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY0OTA5MA==,size_16,color_FFFFFF,t_70)
+
+##  3. 字典
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190415223845170.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY0OTA5MA==,size_16,color_FFFFFF,t_70)
+
+- **type属性：是一个指向dictType结构的指针，每个dictType结构保存了用于操作特定类型的键值对的函数。**
+- **privdata属性：保存了需要传给那些类型特定函数的可选参数。**
+- **ht属性：包含两个项的数组，每个项都是一个哈希表。**
+- **trehashidx属性：它记录了rehash的目前进度，如果目前没有进行rehash，值则为-1。**
+-  **type属性和privdata属性是针对不同类型的键值对，为创建多态字典而设置。**
+### dictType结构
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190415224310154.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY0OTA5MA==,size_16,color_FFFFFF,t_70)
+### 下图为一个普通状态的字典
+![标题](https://img-blog.csdnimg.cn/20190415224833181.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY0OTA5MA==,size_16,color_FFFFFF,t_70)
+## 4.哈希算法
+**当新的一个键值对要添加到字典时，程序首先算出键值对中的键的哈希值和索引值，然后再根据索引值将键值对的哈希表节点放到哈希数组指定的索引上。计算哈希值和索引值的步骤如下**
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190415225758363.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY0OTA5MA==,size_16,color_FFFFFF,t_70)
+## 5.解决哈希冲突
+**当有两个或者多个键值对的键被分配到哈希表数组中的同一个索引上，就会发生哈希冲突问题。Redis的哈希表采用拉链法，也称为链地址法来解决哈希冲突。每个哈希表节点都有一个next的指针，多个哈希表节点可以利用next指针形成一个单链表，当多个节点被分配到同一个索引上时就能解决哈希冲突问题。dictEntry节点组成的链表没有指向链表表尾的指针，程序会将新节点放在已有节点的前面，复杂度为O(1)。**
+### 下面两张图片展示解决哈希冲突的问题
+#### 未发生哈希冲突时
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190415231019404.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY0OTA5MA==,size_16,color_FFFFFF,t_70)
+#### 插入一个键为k2，值为k2的键值对时发生哈希冲突，程序将新节点添加到链表的表头位置。排在其他节点的前面。
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190415231445176.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTY0OTA5MA==,size_16,color_FFFFFF,t_70)
+##  6.rehash
+**随着我们的操作不断执行，哈希表里的键值对会逐渐增多或者减少，当程序的哈希表键值对太多或者太少的时候，程序需要对哈希表的大小进行扩展或者减少。**
+#### Redis对哈希表的执行rehash步骤简介：
+1. **为字典的ht[1]哈希表分配空间，哈希表的空间大小取决于要执行的操作以及ht[0]当前包含的键值对数量。**
+2. **将保存在ht[0]上的键值对rehash到ht[1]上，重新计算哈希值和索引值，然后将所有键值对放置到ht[1]哈希表的指定索引上。**
+3. **当ht[0]的所有键值对都转移到ht[1]后，程序会释放ht[0]，将ht[1]设置成ht[0]，并在ht[1]新创建一个空表，为下一次rehash做准备。**
+### 渐进式rehash
+**rehash这个操作不是一次性完成的，而是分多次，渐进式完成的。为什么呢？
+举个例子：如果ht[0]只保存6个键值对，那么Redis可以在瞬间就把这些键值对rehash到ht[1]上，但是如果是几百万，几千万，几亿呢？要是一次性把所有键值对都rehash到ht[1]上的话，这么庞大的计算量会导致Redis在一段时间内停止服务。**
+#### 渐进式rehash步骤简介：
+1. **为ht[1]分配空间，字典这时同时持有ht[0]和ht[1]两张表。**
+2. **字典中的索引计数器rehashidx设置为0，表示rehash操作正式开始。**
+3. **在进行渐进式的rehash操作期间，对字典的删除、添加、修改、查找操作会在两个哈希表进行，比如查找，先查询ht[0]，没找到就去查找ht[1]。新增操作只会被保存到ht[1]中，而ht[0]不再进行任何的新增操作，只会出现只减不增的情况，并随着rehash的执行完成变成空表。**
+4. **rehash操作完成时，rehashidx属性的值会被设置成-1。表示rehash完成。**
+以上是简单概述一下rehash的操作流程，不懂的建议还是百度一下看看，毕竟自己一开始看的时候也不是很懂，0-0，看多了才慢慢理解。。。
+
+## 字典的自我总结
+###  写了这么多屁话，是时候总结一波了！！！
+- **Redis的字典底层是使用哈希表实现的，每个字典里有两个哈希表，一个是平时使用，另外一个是执行rehash操作的时候使用。**
+- **哈希表使用拉链法来解决多个键值使用哈希算法计算出为同一个索引上时的哈希碰撞问题，让多个相同索引的键值对形成一个单链表。**
+- **在对哈希表进行扩展和收缩操作时，程序会对现有的哈希表里的所有键值对rehash到新的哈希表里去，但是该操作不是一次性的，是渐进式的。**
+----
+# 晚安各位道友！！！下期再见！！！, firstPicture=https://picsum.photos/id/1001/800/450, flag=原创, views=4557, appreciation=false, share=true, commentabled=true, published=true, recommend=true, tagIds=, createTime=null, updateTime=null), org.apache.catalina.session.StandardSessionFacade@39595306, {}]}
+2019-07-04 00:02:55.339  INFO 7216 --- [http-nio-80-exec-6] cn.it.yip.aspect.LogAspect               : Response Args : "redirect:list"
+2019-07-04 00:02:55.339  INFO 7216 --- [http-nio-80-exec-6] cn.it.yip.aspect.LogAspect               : Time-Consuming : 11927 ms
+2019-07-04 00:02:55.339  INFO 7216 --- [http-nio-80-exec-6] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:02:55.353  INFO 7216 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:02:55.353  INFO 7216 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/blogs/list', 描述信息description='查询所有博客',httpMethod='GET', classMethod='cn.it.yip.web.admin.AdminBlogController.blogList', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[BlogVo(title=null, recommend=false, typeId=null), Page request [number: 0, size 30, sort: updateTime: ASC], {message=操作成功, blogVo=BlogVo(title=null, recommend=false, typeId=null), org.springframework.validation.BindingResult.blogVo=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2019-07-04 00:02:55.364  INFO 7216 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : Response Args : "admin/blogs"
+2019-07-04 00:02:55.364  INFO 7216 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : Time-Consuming : 11 ms
+2019-07-04 00:02:55.364  INFO 7216 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:02:58.798  INFO 7216 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:02:58.798  INFO 7216 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/blog/3', 描述信息description='根据博客Id查看博客详情',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.blog', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[3, {}]}
+2019-07-04 00:02:58.932  INFO 7216 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Response Args : "blog"
+2019-07-04 00:02:58.932  INFO 7216 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Time-Consuming : 134 ms
+2019-07-04 00:02:58.932  INFO 7216 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:09:21.891  INFO 5180 --- [main] cn.it.yip.BlogApplication                : Starting BlogApplication on YipSouL with PID 5180 (D:\Idea-Project\blog\target\classes started by YipSouL in D:\Idea-Project\blog)
+2019-07-04 00:09:21.894 DEBUG 5180 --- [main] cn.it.yip.BlogApplication                : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-07-04 00:09:21.894  INFO 5180 --- [main] cn.it.yip.BlogApplication                : The following profiles are active: dev
+2019-07-04 00:09:22.591  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:09:22.592  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:09:22.680  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81ms. Found 5 repository interfaces.
+2019-07-04 00:09:22.691  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:09:22.692  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:09:22.709  INFO 5180 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.BlogRepository.
+2019-07-04 00:09:22.709  INFO 5180 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.CommentRepository.
+2019-07-04 00:09:22.710  INFO 5180 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TagRepository.
+2019-07-04 00:09:22.710  INFO 5180 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TypeRepository.
+2019-07-04 00:09:22.711  INFO 5180 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.UserRepository.
+2019-07-04 00:09:22.711  INFO 5180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-07-04 00:09:23.033  INFO 5180 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9bfef87e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 00:09:23.407  INFO 5180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-07-04 00:09:23.428  INFO 5180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 00:09:23.428  INFO 5180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-04 00:09:23.631  INFO 5180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 00:09:23.631  INFO 5180 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1656 ms
+2019-07-04 00:09:23.819  INFO 5180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-04 00:09:23.864  INFO 5180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-04 00:09:23.865  INFO 5180 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-04 00:09:23.963  INFO 5180 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-04 00:09:24.115  INFO 5180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 00:09:24.270  INFO 5180 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2019-07-04 00:09:24.273  INFO 5180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 00:09:24.284  INFO 5180 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-07-04 00:09:24.311  INFO 5180 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-04 00:09:24.910  INFO 5180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 00:09:25.394  INFO 5180 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-04 00:09:26.040  INFO 5180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 00:09:26.083  WARN 5180 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 00:09:26.199  WARN 5180 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-04 00:09:26.233  INFO 5180 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-04 00:09:26.505  INFO 5180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-07-04 00:09:26.507  INFO 5180 --- [main] cn.it.yip.BlogApplication                : Started BlogApplication in 5.245 seconds (JVM running for 6.181)
+2019-07-04 00:11:30.828  INFO 5180 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 00:11:30.828  INFO 5180 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 00:11:30.840  INFO 5180 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-07-04 00:11:30.953  INFO 5180 --- [http-nio-80-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-07-04 00:11:30.954  INFO 5180 --- [http-nio-80-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-07-04 00:11:36.326  INFO 5180 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:11:36.327  INFO 5180 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/login', 描述信息description='登录用户接口',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminController.login', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[User{id=null, username='root', nickname='null', password='root', email='null', avatar='null', type=null, createTime=null, updateTime=null}, org.apache.catalina.session.StandardSessionFacade@7b68644f, {}]}
+2019-07-04 00:11:36.375  INFO 5180 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Response Args : "redirect:/admin"
+2019-07-04 00:11:36.375  INFO 5180 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Time-Consuming : 49 ms
+2019-07-04 00:11:36.375  INFO 5180 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:13:47.510  INFO 2832 --- [main] cn.it.yip.BlogApplication                : Starting BlogApplication on YipSouL with PID 2832 (D:\Idea-Project\blog\target\classes started by YipSouL in D:\Idea-Project\blog)
+2019-07-04 00:13:47.513 DEBUG 2832 --- [main] cn.it.yip.BlogApplication                : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-07-04 00:13:47.513  INFO 2832 --- [main] cn.it.yip.BlogApplication                : The following profiles are active: dev
+2019-07-04 00:13:48.305  INFO 2832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:13:48.306  INFO 2832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:13:48.418  INFO 2832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105ms. Found 5 repository interfaces.
+2019-07-04 00:13:48.435  INFO 2832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:13:48.438  INFO 2832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:13:48.460  INFO 2832 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.BlogRepository.
+2019-07-04 00:13:48.461  INFO 2832 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.CommentRepository.
+2019-07-04 00:13:48.461  INFO 2832 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TagRepository.
+2019-07-04 00:13:48.462  INFO 2832 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TypeRepository.
+2019-07-04 00:13:48.462  INFO 2832 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.UserRepository.
+2019-07-04 00:13:48.462  INFO 2832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-07-04 00:13:48.878  INFO 2832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e13dac9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 00:13:49.375  INFO 2832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-07-04 00:13:49.395  INFO 2832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 00:13:49.395  INFO 2832 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-04 00:13:49.593  INFO 2832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 00:13:49.593  INFO 2832 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1999 ms
+2019-07-04 00:13:49.852  INFO 2832 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-04 00:13:49.931  INFO 2832 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-04 00:13:49.933  INFO 2832 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-04 00:13:50.105  INFO 2832 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-04 00:13:50.339  INFO 2832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 00:13:50.505  INFO 2832 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2019-07-04 00:13:50.507  INFO 2832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 00:13:50.519  INFO 2832 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-07-04 00:13:50.560  INFO 2832 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-04 00:13:51.432  INFO 2832 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 00:13:52.049  INFO 2832 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-04 00:13:52.954  INFO 2832 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 00:13:53.014  WARN 2832 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 00:13:53.131  WARN 2832 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-04 00:13:53.168  INFO 2832 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-04 00:13:53.511  INFO 2832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-07-04 00:13:53.513  INFO 2832 --- [main] cn.it.yip.BlogApplication                : Started BlogApplication in 7.245 seconds (JVM running for 8.391)
+2019-07-04 00:13:55.568  INFO 2832 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 00:13:55.568  INFO 2832 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 00:13:55.577  INFO 2832 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-07-04 00:13:55.698  INFO 2832 --- [http-nio-80-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-07-04 00:13:55.699  INFO 2832 --- [http-nio-80-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-07-04 00:14:00.081  INFO 2832 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:14:00.082  INFO 2832 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/login', 描述信息description='登录用户接口',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminController.login', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[User{id=null, username='root', nickname='null', password='root', email='null', avatar='null', type=null, createTime=null, updateTime=null}, org.apache.catalina.session.StandardSessionFacade@6310c04b, {}]}
+2019-07-04 00:14:42.714  WARN 2832 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s104ms942µs409ns).
+2019-07-04 00:15:13.255  INFO 2832 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:15:13.256  INFO 2832 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/login', 描述信息description='登录用户接口',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminController.login', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[User{id=null, username='root', nickname='null', password='root', email='null', avatar='null', type=null, createTime=null, updateTime=null}, org.apache.catalina.session.StandardSessionFacade@75667ac0, {}]}
+2019-07-04 00:15:19.081  INFO 2832 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Response Args : "redirect:/admin"
+2019-07-04 00:15:19.081  INFO 2832 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Time-Consuming : 79001 ms
+2019-07-04 00:15:19.081  INFO 2832 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:15:23.396  INFO 2832 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : Response Args : "admin/index"
+2019-07-04 00:15:23.397  INFO 2832 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : Time-Consuming : 10142 ms
+2019-07-04 00:15:23.397  INFO 2832 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:17:04.803  INFO 12500 --- [main] cn.it.yip.BlogApplication                : Starting BlogApplication on YipSouL with PID 12500 (D:\Idea-Project\blog\target\classes started by YipSouL in D:\Idea-Project\blog)
+2019-07-04 00:17:04.805 DEBUG 12500 --- [main] cn.it.yip.BlogApplication                : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-07-04 00:17:04.806  INFO 12500 --- [main] cn.it.yip.BlogApplication                : The following profiles are active: dev
+2019-07-04 00:17:05.542  INFO 12500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:17:05.542  INFO 12500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:17:05.653  INFO 12500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100ms. Found 5 repository interfaces.
+2019-07-04 00:17:05.667  INFO 12500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:17:05.668  INFO 12500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:17:05.685  INFO 12500 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.BlogRepository.
+2019-07-04 00:17:05.685  INFO 12500 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.CommentRepository.
+2019-07-04 00:17:05.686  INFO 12500 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TagRepository.
+2019-07-04 00:17:05.687  INFO 12500 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TypeRepository.
+2019-07-04 00:17:05.687  INFO 12500 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.UserRepository.
+2019-07-04 00:17:05.688  INFO 12500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-07-04 00:17:06.093  INFO 12500 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5d461244] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 00:17:06.483  INFO 12500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-07-04 00:17:06.554  INFO 12500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 00:17:06.554  INFO 12500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-04 00:17:06.685  INFO 12500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 00:17:06.685  INFO 12500 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1839 ms
+2019-07-04 00:17:06.903  INFO 12500 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-04 00:17:06.959  INFO 12500 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-04 00:17:06.960  INFO 12500 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-04 00:17:07.085  INFO 12500 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-04 00:17:07.258  INFO 12500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 00:17:07.392  INFO 12500 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2019-07-04 00:17:07.396  INFO 12500 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 00:17:07.404  INFO 12500 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-07-04 00:17:07.429  INFO 12500 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-04 00:17:08.206  INFO 12500 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 00:17:08.740  INFO 12500 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-04 00:17:09.367  INFO 12500 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 00:17:09.414  WARN 12500 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 00:17:09.521  WARN 12500 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-04 00:17:09.559  INFO 12500 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-04 00:17:09.807  INFO 12500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-07-04 00:17:09.809  INFO 12500 --- [main] cn.it.yip.BlogApplication                : Started BlogApplication in 5.747 seconds (JVM running for 6.863)
+2019-07-04 00:17:21.448  INFO 12500 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 00:17:21.449  INFO 12500 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 00:17:21.462  INFO 12500 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-07-04 00:17:21.595  INFO 12500 --- [http-nio-80-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-07-04 00:17:21.596  INFO 12500 --- [http-nio-80-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-07-04 00:17:27.269  INFO 12500 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:17:27.271  INFO 12500 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/login', 描述信息description='登录用户接口',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminController.login', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[User{id=null, username='root', nickname='null', password='root', email='null', avatar='null', type=null, createTime=null, updateTime=null}, org.apache.catalina.session.StandardSessionFacade@43d0c208, {}]}
+2019-07-04 00:17:32.505  INFO 12500 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Response Args : "admin/index"
+2019-07-04 00:17:32.505  INFO 12500 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Time-Consuming : 5236 ms
+2019-07-04 00:17:32.505  INFO 12500 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:18:22.737  INFO 4848 --- [main] cn.it.yip.BlogApplication                : Starting BlogApplication on YipSouL with PID 4848 (D:\Idea-Project\blog\target\classes started by YipSouL in D:\Idea-Project\blog)
+2019-07-04 00:18:22.740 DEBUG 4848 --- [main] cn.it.yip.BlogApplication                : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-07-04 00:18:22.741  INFO 4848 --- [main] cn.it.yip.BlogApplication                : The following profiles are active: dev
+2019-07-04 00:18:23.439  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:18:23.440  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:18:23.532  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84ms. Found 5 repository interfaces.
+2019-07-04 00:18:23.546  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 00:18:23.547  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 00:18:23.562  INFO 4848 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.BlogRepository.
+2019-07-04 00:18:23.563  INFO 4848 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.CommentRepository.
+2019-07-04 00:18:23.563  INFO 4848 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TagRepository.
+2019-07-04 00:18:23.564  INFO 4848 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TypeRepository.
+2019-07-04 00:18:23.564  INFO 4848 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.UserRepository.
+2019-07-04 00:18:23.564  INFO 4848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-07-04 00:18:23.935  INFO 4848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b510598d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 00:18:24.322  INFO 4848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-07-04 00:18:24.390  INFO 4848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 00:18:24.390  INFO 4848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-04 00:18:24.509  INFO 4848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 00:18:24.509  INFO 4848 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1723 ms
+2019-07-04 00:18:24.715  INFO 4848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-04 00:18:24.767  INFO 4848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-04 00:18:24.768  INFO 4848 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-04 00:18:24.890  INFO 4848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-04 00:18:25.070  INFO 4848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 00:18:25.206  INFO 4848 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2019-07-04 00:18:25.209  INFO 4848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 00:18:25.220  INFO 4848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-07-04 00:18:25.244  INFO 4848 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-04 00:18:25.920  INFO 4848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 00:18:26.408  INFO 4848 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-04 00:18:27.036  INFO 4848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 00:18:27.092  WARN 4848 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 00:18:27.205  WARN 4848 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-04 00:18:27.238  INFO 4848 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-04 00:18:27.482  INFO 4848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-07-04 00:18:27.484  INFO 4848 --- [main] cn.it.yip.BlogApplication                : Started BlogApplication in 5.648 seconds (JVM running for 6.992)
+2019-07-04 00:18:51.745  INFO 4848 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 00:18:51.745  INFO 4848 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 00:18:51.758  INFO 4848 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-07-04 00:18:51.873  INFO 4848 --- [http-nio-80-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-07-04 00:18:51.874  INFO 4848 --- [http-nio-80-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-07-04 00:18:52.483  INFO 4848 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 00:18:52.485  INFO 4848 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/admin/login', 描述信息description='登录用户接口',httpMethod='POST', classMethod='cn.it.yip.web.admin.AdminController.login', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[User{id=null, username='root', nickname='null', password='root', email='null', avatar='null', type=null, createTime=null, updateTime=null}, org.apache.catalina.session.StandardSessionFacade@62455826, {}]}
+2019-07-04 00:18:52.580  INFO 4848 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Response Args : "admin/index"
+2019-07-04 00:18:52.581  INFO 4848 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Time-Consuming : 97 ms
+2019-07-04 00:18:52.581  INFO 4848 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 00:47:51.794  INFO 4848 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /192.168.56.101:6379
+2019-07-04 00:47:52.804  WARN 4848 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.56.101:6379
+2019-07-04 00:48:02.992  INFO 4848 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:48:12.998  WARN 4848 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:48:13.092  INFO 4848 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:48:23.096  WARN 4848 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:48:23.191  INFO 4848 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:48:33.194  WARN 4848 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:48:33.291  INFO 4848 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:48:43.299  WARN 4848 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:48:43.392  INFO 4848 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:48:53.395  WARN 4848 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:48:53.592  INFO 4848 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:49:03.594  WARN 4848 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:49:03.891  INFO 4848 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:49:13.893  WARN 4848 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:49:14.491  INFO 4848 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:49:24.495  WARN 4848 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:49:25.591  INFO 4848 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:49:35.594  WARN 4848 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:49:37.691  INFO 4848 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:49:47.693  WARN 4848 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:49:51.792  INFO 4848 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:50:01.794  WARN 4848 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:50:09.991  INFO 4848 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:50:19.993  WARN 4848 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:50:36.391  INFO 4848 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:50:46.393  WARN 4848 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:51:16.491  INFO 4848 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:51:26.493  WARN 4848 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:51:56.591  INFO 4848 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:52:06.594  WARN 4848 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:52:36.691  INFO 4848 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:52:46.693  WARN 4848 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:53:16.791  INFO 4848 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:53:26.792  WARN 4848 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:53:56.891  INFO 4848 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:54:06.893  WARN 4848 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:54:36.991  INFO 4848 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:54:46.995  WARN 4848 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:55:17.091  INFO 4848 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:55:27.093  WARN 4848 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:55:57.192  INFO 4848 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:56:07.194  WARN 4848 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:56:37.291  INFO 4848 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:56:47.293  WARN 4848 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:57:17.392  INFO 4848 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:57:27.395  WARN 4848 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:57:57.491  INFO 4848 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:58:07.492  WARN 4848 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:58:37.591  INFO 4848 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:58:47.593  WARN 4848 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:59:17.691  INFO 4848 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 00:59:27.696  WARN 4848 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 00:59:57.791  INFO 4848 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:00:07.793  WARN 4848 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:00:37.891  INFO 4848 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:00:47.892  WARN 4848 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:01:17.992  INFO 4848 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:01:27.994  WARN 4848 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:01:58.092  INFO 4848 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:02:08.095  WARN 4848 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:02:38.191  INFO 4848 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:02:48.197  WARN 4848 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:03:18.290  INFO 4848 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:03:28.293  WARN 4848 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:03:58.391  INFO 4848 --- [lettuce-eventExecutorLoop-1-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:04:08.393  WARN 4848 --- [lettuce-nioEventLoop-4-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:04:38.492  INFO 4848 --- [lettuce-eventExecutorLoop-1-7] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:04:48.495  WARN 4848 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:05:18.591  INFO 4848 --- [lettuce-eventExecutorLoop-1-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:05:28.593  WARN 4848 --- [lettuce-nioEventLoop-4-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:05:58.692  INFO 4848 --- [lettuce-eventExecutorLoop-1-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:06:08.693  WARN 4848 --- [lettuce-nioEventLoop-4-7] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:06:38.792  INFO 4848 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:06:48.795  WARN 4848 --- [lettuce-nioEventLoop-4-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:07:18.892  INFO 4848 --- [lettuce-eventExecutorLoop-1-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:07:28.894  WARN 4848 --- [lettuce-nioEventLoop-4-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:07:58.991  INFO 4848 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:08:08.993  WARN 4848 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 01:08:39.092  INFO 4848 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was 192.168.56.101:6379
+2019-07-04 01:08:49.094  WARN 4848 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.56.101:6379
+2019-07-04 12:25:43.235  INFO 4992 --- [main] cn.it.yip.BlogApplication                : Starting BlogApplication on YipSouL with PID 4992 (D:\Idea-Project\blog\target\classes started by YipSouL in D:\Idea-Project\blog)
+2019-07-04 12:25:43.237 DEBUG 4992 --- [main] cn.it.yip.BlogApplication                : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-07-04 12:25:43.238  INFO 4992 --- [main] cn.it.yip.BlogApplication                : The following profiles are active: dev
+2019-07-04 12:25:44.448  INFO 4992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 12:25:44.449  INFO 4992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 12:25:44.562  INFO 4992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103ms. Found 5 repository interfaces.
+2019-07-04 12:25:44.579  INFO 4992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 12:25:44.580  INFO 4992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 12:25:44.601  INFO 4992 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.BlogRepository.
+2019-07-04 12:25:44.602  INFO 4992 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.CommentRepository.
+2019-07-04 12:25:44.602  INFO 4992 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TagRepository.
+2019-07-04 12:25:44.602  INFO 4992 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TypeRepository.
+2019-07-04 12:25:44.603  INFO 4992 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.UserRepository.
+2019-07-04 12:25:44.603  INFO 4992 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-07-04 12:25:45.006  INFO 4992 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3e50eddc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 12:25:45.570  INFO 4992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-07-04 12:25:45.597  INFO 4992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 12:25:45.597  INFO 4992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-04 12:25:45.920  INFO 4992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 12:25:45.920  INFO 4992 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2616 ms
+2019-07-04 12:25:46.390  INFO 4992 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-04 12:25:46.502  INFO 4992 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-04 12:25:46.503  INFO 4992 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-04 12:25:46.803  INFO 4992 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-04 12:25:47.128  INFO 4992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 12:25:47.319  INFO 4992 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2019-07-04 12:25:47.322  INFO 4992 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 12:25:47.345  INFO 4992 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-07-04 12:25:47.395  INFO 4992 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-04 12:25:48.717  INFO 4992 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 12:25:49.578  INFO 4992 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-04 12:25:50.391  INFO 4992 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 12:25:50.447  WARN 4992 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 12:25:50.570  WARN 4992 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-04 12:25:50.747  INFO 4992 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-04 12:25:51.059  INFO 4992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-07-04 12:25:51.061  INFO 4992 --- [main] cn.it.yip.BlogApplication                : Started BlogApplication in 8.824 seconds (JVM running for 11.858)
+2019-07-04 12:26:06.380  INFO 4992 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 12:26:06.380  INFO 4992 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 12:26:06.389  INFO 4992 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-07-04 12:26:06.544  INFO 4992 --- [http-nio-80-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-07-04 12:26:06.546  INFO 4992 --- [http-nio-80-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-07-04 12:26:07.258  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:26:07.261  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/', 描述信息description='博客首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.index', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[org.apache.catalina.connector.RequestFacade@22916c85, Page request [number: 0, size 40, sort: updateTime: DESC], {}]}
+2019-07-04 12:26:07.363  WARN 4992 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-07-04 12:26:07.371  WARN 4992 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-07-04 12:26:07.405  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Response Args : "index"
+2019-07-04 12:26:07.405  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Time-Consuming : 147 ms
+2019-07-04 12:26:07.405  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:26:12.840  INFO 4992 --- [http-nio-80-exec-6] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:26:12.840  INFO 4992 --- [http-nio-80-exec-6] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/', 描述信息description='博客首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.index', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[org.apache.catalina.connector.RequestFacade@62e615d1, Page request [number: 0, size 40, sort: updateTime: DESC], {}]}
+2019-07-04 12:26:12.856  INFO 4992 --- [http-nio-80-exec-6] cn.it.yip.aspect.LogAspect               : Response Args : "index"
+2019-07-04 12:26:12.856  INFO 4992 --- [http-nio-80-exec-6] cn.it.yip.aspect.LogAspect               : Time-Consuming : 16 ms
+2019-07-04 12:26:12.856  INFO 4992 --- [http-nio-80-exec-6] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:26:20.739  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:26:20.740  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/type.html', 描述信息description='分类首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.typeIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[Page request [number: 0, size 50, sort: updateTime: DESC], {}]}
+2019-07-04 12:26:20.852  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : Response Args : "types"
+2019-07-04 12:26:20.853  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : Time-Consuming : 114 ms
+2019-07-04 12:26:20.853  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:26:28.170  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:26:28.170  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/tags.html', 描述信息description='标签首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.tagsIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[Page request [number: 0, size 50, sort: updateTime: DESC], {}]}
+2019-07-04 12:26:28.191  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : Response Args : "tags"
+2019-07-04 12:26:28.191  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : Time-Consuming : 21 ms
+2019-07-04 12:26:28.191  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:26:30.116  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:26:30.116  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/type.html', 描述信息description='分类首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.typeIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[Page request [number: 0, size 50, sort: updateTime: DESC], {}]}
+2019-07-04 12:26:30.121  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Response Args : "types"
+2019-07-04 12:26:30.121  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Time-Consuming : 5 ms
+2019-07-04 12:26:30.121  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:27:00.489  INFO 4992 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:27:00.489  INFO 4992 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/type.html', 描述信息description='分类首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.typeIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[Page request [number: 0, size 50, sort: updateTime: DESC], {}]}
+2019-07-04 12:27:00.493  INFO 4992 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : Response Args : "types"
+2019-07-04 12:27:00.493  INFO 4992 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : Time-Consuming : 4 ms
+2019-07-04 12:27:00.493  INFO 4992 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:27:10.419  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:27:10.419  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/type/2', 描述信息description='根据分类id查询博客列表接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.typeByID', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[2, Page request [number: 0, size 50, sort: updateTime: DESC], {}]}
+2019-07-04 12:27:10.427  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : Response Args : "types"
+2019-07-04 12:27:10.427  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : Time-Consuming : 8 ms
+2019-07-04 12:27:10.427  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:29:33.807  INFO 4992 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:29:33.807  INFO 4992 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/', 描述信息description='博客首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.index', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[org.apache.catalina.connector.RequestFacade@62e615d1, Page request [number: 0, size 40, sort: updateTime: DESC], {}]}
+2019-07-04 12:29:33.819  INFO 4992 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : Response Args : "index"
+2019-07-04 12:29:33.819  INFO 4992 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : Time-Consuming : 12 ms
+2019-07-04 12:29:33.819  INFO 4992 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:31:23.489  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:31:23.489  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/type.html', 描述信息description='分类首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.typeIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[Page request [number: 0, size 50, sort: updateTime: DESC], {}]}
+2019-07-04 12:31:23.493  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : Response Args : "types"
+2019-07-04 12:31:23.494  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : Time-Consuming : 5 ms
+2019-07-04 12:31:23.494  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:31:24.952  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:31:24.952  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/tags.html', 描述信息description='标签首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.tagsIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[Page request [number: 0, size 50, sort: updateTime: DESC], {}]}
+2019-07-04 12:31:24.956  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : Response Args : "tags"
+2019-07-04 12:31:24.956  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : Time-Consuming : 4 ms
+2019-07-04 12:31:24.956  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:31:27.273  INFO 4992 --- [http-nio-80-exec-9] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:31:27.274  INFO 4992 --- [http-nio-80-exec-9] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/type.html', 描述信息description='分类首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.typeIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[Page request [number: 0, size 50, sort: updateTime: DESC], {}]}
+2019-07-04 12:31:27.278  INFO 4992 --- [http-nio-80-exec-9] cn.it.yip.aspect.LogAspect               : Response Args : "types"
+2019-07-04 12:31:27.278  INFO 4992 --- [http-nio-80-exec-9] cn.it.yip.aspect.LogAspect               : Time-Consuming : 5 ms
+2019-07-04 12:31:27.278  INFO 4992 --- [http-nio-80-exec-9] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:31:29.140  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:31:29.140  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/archives.html', 描述信息description='归档页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.archivesIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[{}]}
+2019-07-04 12:31:29.158  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Response Args : "archives"
+2019-07-04 12:31:29.158  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Time-Consuming : 18 ms
+2019-07-04 12:31:29.158  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:31:34.533  INFO 4992 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:31:34.534  INFO 4992 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/about.html', 描述信息description='关于我页面接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.aboutIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[]}
+2019-07-04 12:31:34.534  INFO 4992 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Response Args : "about"
+2019-07-04 12:31:34.534  INFO 4992 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Time-Consuming : 1 ms
+2019-07-04 12:31:34.534  INFO 4992 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:31:43.661  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:31:43.661  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/archives.html', 描述信息description='归档页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.archivesIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[{}]}
+2019-07-04 12:31:43.670  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Response Args : "archives"
+2019-07-04 12:31:43.670  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Time-Consuming : 9 ms
+2019-07-04 12:31:43.671  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:31:45.088  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:31:45.089  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/tags.html', 描述信息description='标签首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.tagsIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[Page request [number: 0, size 50, sort: updateTime: DESC], {}]}
+2019-07-04 12:31:45.092  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : Response Args : "tags"
+2019-07-04 12:31:45.092  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : Time-Consuming : 4 ms
+2019-07-04 12:31:45.092  INFO 4992 --- [http-nio-80-exec-10] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:31:46.217  INFO 4992 --- [http-nio-80-exec-7] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:31:46.217  INFO 4992 --- [http-nio-80-exec-7] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/type.html', 描述信息description='分类首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.typeIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[Page request [number: 0, size 50, sort: updateTime: DESC], {}]}
+2019-07-04 12:31:46.222  INFO 4992 --- [http-nio-80-exec-7] cn.it.yip.aspect.LogAspect               : Response Args : "types"
+2019-07-04 12:31:46.222  INFO 4992 --- [http-nio-80-exec-7] cn.it.yip.aspect.LogAspect               : Time-Consuming : 6 ms
+2019-07-04 12:31:46.223  INFO 4992 --- [http-nio-80-exec-7] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:31:47.441  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:31:47.441  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/', 描述信息description='博客首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.index', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[org.apache.catalina.connector.RequestFacade@62e615d1, Page request [number: 0, size 40, sort: updateTime: DESC], {}]}
+2019-07-04 12:31:47.452  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : Response Args : "index"
+2019-07-04 12:31:47.452  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : Time-Consuming : 11 ms
+2019-07-04 12:31:47.452  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:33:02.267  INFO 4992 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:33:02.267  INFO 4992 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/', 描述信息description='博客首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.index', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[org.apache.catalina.connector.RequestFacade@62e615d1, Page request [number: 0, size 40, sort: updateTime: DESC], {}]}
+2019-07-04 12:33:02.275  INFO 4992 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : Response Args : "index"
+2019-07-04 12:33:02.276  INFO 4992 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : Time-Consuming : 9 ms
+2019-07-04 12:33:02.276  INFO 4992 --- [http-nio-80-exec-5] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:33:04.646  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:33:04.646  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/', 描述信息description='博客首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.index', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[org.apache.catalina.connector.RequestFacade@3acb74f1, Page request [number: 0, size 40, sort: updateTime: DESC], {}]}
+2019-07-04 12:33:04.653  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Response Args : "index"
+2019-07-04 12:33:04.653  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Time-Consuming : 7 ms
+2019-07-04 12:33:04.654  INFO 4992 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:35:22.782  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:35:22.782  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/', 描述信息description='博客首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.index', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[org.apache.catalina.connector.RequestFacade@3acb74f1, Page request [number: 0, size 40, sort: updateTime: DESC], {}]}
+2019-07-04 12:35:22.794  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : Response Args : "index"
+2019-07-04 12:35:22.795  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : Time-Consuming : 13 ms
+2019-07-04 12:35:22.795  INFO 4992 --- [http-nio-80-exec-8] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:37:34.957  INFO 4992 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:37:34.957  INFO 4992 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/', 描述信息description='博客首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.index', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[org.apache.catalina.connector.RequestFacade@3acb74f1, Page request [number: 0, size 40, sort: updateTime: DESC], {}]}
+2019-07-04 12:37:34.969  INFO 4992 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : Response Args : "index"
+2019-07-04 12:37:34.969  INFO 4992 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : Time-Consuming : 13 ms
+2019-07-04 12:37:34.969  INFO 4992 --- [http-nio-80-exec-4] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:37:49.617  INFO 4992 --- [http-nio-80-exec-7] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:37:49.617  INFO 4992 --- [http-nio-80-exec-7] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/', 描述信息description='博客首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.index', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[org.apache.catalina.connector.RequestFacade@3acb74f1, Page request [number: 0, size 40, sort: updateTime: DESC], {}]}
+2019-07-04 12:37:49.627  INFO 4992 --- [http-nio-80-exec-7] cn.it.yip.aspect.LogAspect               : Response Args : "index"
+2019-07-04 12:37:49.627  INFO 4992 --- [http-nio-80-exec-7] cn.it.yip.aspect.LogAspect               : Time-Consuming : 10 ms
+2019-07-04 12:37:49.627  INFO 4992 --- [http-nio-80-exec-7] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:38:09.009  INFO 4992 --- [http-nio-80-exec-9] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:38:09.009  INFO 4992 --- [http-nio-80-exec-9] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/type.html', 描述信息description='分类首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.typeIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[Page request [number: 0, size 50, sort: updateTime: DESC], {}]}
+2019-07-04 12:38:09.013  INFO 4992 --- [http-nio-80-exec-9] cn.it.yip.aspect.LogAspect               : Response Args : "types"
+2019-07-04 12:38:09.014  INFO 4992 --- [http-nio-80-exec-9] cn.it.yip.aspect.LogAspect               : Time-Consuming : 5 ms
+2019-07-04 12:38:09.014  INFO 4992 --- [http-nio-80-exec-9] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:38:10.982  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:38:10.982  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/tags.html', 描述信息description='标签首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.tagsIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[Page request [number: 0, size 50, sort: updateTime: DESC], {}]}
+2019-07-04 12:38:10.986  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Response Args : "tags"
+2019-07-04 12:38:10.986  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Time-Consuming : 4 ms
+2019-07-04 12:38:10.986  INFO 4992 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:38:23.512  INFO 4992 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:38:23.512  INFO 4992 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/', 描述信息description='博客首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.index', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[org.apache.catalina.connector.RequestFacade@3acb74f1, Page request [number: 0, size 40, sort: updateTime: DESC], {}]}
+2019-07-04 12:38:23.522  INFO 4992 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Response Args : "index"
+2019-07-04 12:38:23.522  INFO 4992 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : Time-Consuming : 10 ms
+2019-07-04 12:38:23.522  INFO 4992 --- [http-nio-80-exec-2] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:52:37.644  INFO 6184 --- [main] cn.it.yip.BlogApplication                : Starting BlogApplication on YipSouL with PID 6184 (D:\Idea-Project\blog\target\classes started by YipSouL in D:\Idea-Project\blog)
+2019-07-04 12:52:37.646 DEBUG 6184 --- [main] cn.it.yip.BlogApplication                : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-07-04 12:52:37.647  INFO 6184 --- [main] cn.it.yip.BlogApplication                : The following profiles are active: dev
+2019-07-04 12:52:38.174  INFO 6184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 12:52:38.174  INFO 6184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 12:52:38.237  INFO 6184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 5 repository interfaces.
+2019-07-04 12:52:38.245  INFO 6184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-07-04 12:52:38.245  INFO 6184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 12:52:38.258  INFO 6184 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.BlogRepository.
+2019-07-04 12:52:38.258  INFO 6184 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.CommentRepository.
+2019-07-04 12:52:38.259  INFO 6184 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TagRepository.
+2019-07-04 12:52:38.259  INFO 6184 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.TypeRepository.
+2019-07-04 12:52:38.259  INFO 6184 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.it.yip.repository.UserRepository.
+2019-07-04 12:52:38.259  INFO 6184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-07-04 12:52:38.528  INFO 6184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3356dd18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 12:52:38.845  INFO 6184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2019-07-04 12:52:38.861  INFO 6184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 12:52:38.861  INFO 6184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-04 12:52:39.017  INFO 6184 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 12:52:39.017  INFO 6184 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1307 ms
+2019-07-04 12:52:39.187  INFO 6184 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-04 12:52:39.229  INFO 6184 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-04 12:52:39.231  INFO 6184 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-04 12:52:39.313  INFO 6184 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-04 12:52:39.440  INFO 6184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 12:52:39.550  INFO 6184 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+2019-07-04 12:52:39.553  INFO 6184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 12:52:39.559  INFO 6184 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-07-04 12:52:39.582  INFO 6184 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2019-07-04 12:52:40.102  INFO 6184 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 12:52:40.493  INFO 6184 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-07-04 12:52:41.054  INFO 6184 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 12:52:41.093  WARN 6184 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 12:52:41.176  WARN 6184 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-04 12:52:41.205  INFO 6184 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-04 12:52:41.387  INFO 6184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2019-07-04 12:52:41.389  INFO 6184 --- [main] cn.it.yip.BlogApplication                : Started BlogApplication in 4.284 seconds (JVM running for 5.244)
+2019-07-04 12:52:49.419  INFO 6184 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 12:52:49.420  INFO 6184 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 12:52:49.430  INFO 6184 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-07-04 12:52:49.511  INFO 6184 --- [http-nio-80-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-07-04 12:52:49.512  INFO 6184 --- [http-nio-80-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-07-04 12:52:50.020  INFO 6184 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:52:50.022  INFO 6184 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/', 描述信息description='博客首页接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.index', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[org.apache.catalina.connector.RequestFacade@31b90d75, Page request [number: 0, size 40, sort: updateTime: DESC], {}]}
+2019-07-04 12:52:50.108  WARN 6184 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-07-04 12:52:50.115  WARN 6184 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-07-04 12:52:50.126  INFO 6184 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Response Args : "index"
+2019-07-04 12:52:50.127  INFO 6184 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : Time-Consuming : 108 ms
+2019-07-04 12:52:50.127  INFO 6184 --- [http-nio-80-exec-1] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
+2019-07-04 12:52:52.247  INFO 6184 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================Start=====================================
+2019-07-04 12:52:52.248  INFO 6184 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : RequestInfo : LogInfo{请求路径url='http://localhost/about.html', 描述信息description='关于我页面接口',httpMethod='GET', classMethod='cn.it.yip.web.IndexController.aboutIndex', 请求ip='0:0:0:0:0:0:0:1', 请求参数requestArgs=[]}
+2019-07-04 12:52:52.248  INFO 6184 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Response Args : "about"
+2019-07-04 12:52:52.248  INFO 6184 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : Time-Consuming : 1 ms
+2019-07-04 12:52:52.248  INFO 6184 --- [http-nio-80-exec-3] cn.it.yip.aspect.LogAspect               : =================================End=====================================
+
