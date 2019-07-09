@@ -1,0 +1,36 @@
+spring:
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/web-blog?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 661024
+  jpa:
+
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  redis:
+    #redis连接端口
+    host: 192.168.56.101
+    #redis 端口
+    port: 6379
+    jedis:
+      pool:
+        max-active: 5  #最大连接数
+
+logging:
+  level:
+    root: info
+    cn.it.yip: debug
+  file: log/blog-dev.log
+
+comment.avatar: /images/boy.png
+  #静态资源对外暴露的访问路径
+file.staticAccessPath: /api/file/**
+  #文件上传目录（注意Linux和Windows上的目录结构不同）
+  #file.uploadFolder=/root/uploadFiles/
+file.uploadFolder: d://uploadFiles/
+myblog.url: https://yip.mynatapp.cc

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/main.css">
+    <link rel="stylesheet" href="../../static/css/animate.css">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css">
+
+    <title>后台发布</title>
+</head>
+
+<body>
+<!-- 背景音乐 -->
+<!-- <audio src="./bg.mp3" autoplay loop></audio> -->
+<!-- 导航 -->
+<nav th:replace="admin/_fragments :: menu(1)"
+     class="ui inverted raised segment m-padded-tb-mini m-shadow-small animated fadeInDown">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">YipSouL</h2>
+            <a href="#" class="active m-item item m-mobile-hide"><i class="mini home icon"></i>博客</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+            <!-- 头像框 -->
+            <div class="right m-item m-mobile-hide menu">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img class="ui avatar image" src="https://unsplash.it/id/1027/100/100">
+                        YipSouL
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item">
+                            <i class="sign out icon"></i>
+                            <a href="#" class=" m-text-thin m-opacity-mini" style="color: teal">注销</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</nav>
+<!-- 发布列表 -->
+<div class="ui attached pointing menu animated bounceInUp">
+    <div class="ui container">
+        <div class="right menu">
+            <a href="#" th:href="@{input}" class="teal active  item">发布</a>
+            <a href="#" th:href="@{list}" class="item">列表</a>
+        </div>
+    </div>
+</div>
+<!-- 内容 -->
+<div class="m-container m-padded-tb-big animated bounceInUp">
+    <div class="ui container">
+
+        <!-- 表单 -->
+        <form id="blog-form" class="ui form" th:object="${blog}" method="POST" action="#" th:action="@{/admin/blogs/add}">
+            <input type="hidden" name="views" th:value="${blog.views}">
+            <input type="hidden" name="id" th:value="${blog.id}">
+            <!-- 标题 -->
+            <div class="field">
+                <input type="hidden" name="published">
+                <div class="ui labeled input">
+                    <!-- compact使标签适应文本内容长度 -->
+                    <div class="ui selection compact teal basic dropdown label">
+                        <input type="hidden" placeholder="原创" name="flag" th:value="*{flag}">
+                        <i class="dropdown icon"></i>
+                        <div class="text">原创</div>
+                        <div class="menu">
+                            <div class="item" data-value="原创">原创</div>
+                            <div class="item" data-value="转载">转载</div>
+                            <div class="item" data-value="翻译">翻译</div>
+                        </div>
+                    </div>
+                    <input type="text" name="title" placeholder="标题" th:value="*{title}">
+                </div>
+            </div>
+
+            <!-- 博客内容 -->
+            <div class="field">
+                <div id="md-content" style="z-index: 1 !important">
+                    <textarea name="content" style="display: none" placeholder="请输入内容" th:text="*{content}"></textarea>
+                </div>
+            </div>
+
+            <!-- 分类 与 标签 -->
+            <div class="two fields">
+                <!-- 分类 -->
+                <div class="field">
+                    <div class="ui left labeled action input">
+                        <label class="ui compact teal basic label">分类</label>
+                        <div class="ui fluid selection dropdown">
+                            <input type="hidden" id="type" name="type.id" th:value="*{type}!=null ? *{type.id}">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">分类</div>
+                            <div class="menu">
+                                <div class="item" data-value="java" th:each="type : ${types}" th:data-value="${type.id}"
+                                     th:text="${type.typeName}">java
+                                </div>
+                                <!--/*-->
+                                <div class="item" data-value="javascript">javascript</div>
+                                <div class="item" data-value="html">html</div>
+                                <!--*/-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 标签 -->
+                <div class="field">
+                    <div class="ui left labeled action input">
+                        <label for="tag" class="ui teal basic label">标签</label>
+                        <div class="ui fluid tag selection multiple dropdown">
+                            <input type="hidden" name="tagIds" th:value="*{tagIds}"> <i class="dropdown icon"></i>
+                            <div class="default text"></div>
+                            <div class="tag menu" >
+                                <div class="item" data-value="java" th:each="tag : ${tags}" th:data-value="${tag.id}"
+                                     th:text="${tag.tagName}">java
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fields">
+            <!-- 图片 -->
+            <div class="twelve wide field">
+                <div class="ui left action labeled input">
+                    <label for="firstPicture" class="ui teal basic label">首图</label>
+                    <input type="text" id="firstPicture" name="firstPicture" placeholder="首图引用地址"
+                           th:value="*{firstPicture}">
+                </div>
+
+            </div>
+                <div class="four wide field">
+                    <div class="ui right action labeled input">
+                        <input id="file" type="file" name="file" value="" >
+                      <button class="mini ui teal basic button" type="button" onclick="postFile()">确认上传</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 选项声明 -->
+            <div class="inline fields">
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="recommend" name="recommend" tabindex="0" class="hidden"
+                               th:checked="*{recommend}">
+                        <label for="recommend">推荐</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="share" name="share" tabindex="0" class="hidden"
+                               th:checked="*{share}">
+                        <label for="share">转载声明</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="commentabled" name="commentabled" tabindex="0" class="hidden"
+                               th:checked="*{commentabled}">
+                        <label for="commentabled">评论</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="appreciation" name="appreciation" tabindex="0" class="hidden"
+                               th:checked="*{appreciation}">
+                        <label for="appreciation">赞赏</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="ui container">
+                    <textarea cols="3" rows="10" placeholder="请输入博客描述" name="description" th:text="*{description}"></textarea>
+                </div>
+            </div>
+            <div class="ui error message"></div>
+            <!-- 提交按钮 -->
+            <div class="ui right aligned container">
+                <button class="ui basic button" onclick="window.history(-1)">返回</button>
+                <button id="save-btn" class="ui primary basic button">保存</button>
+                <button id="publish-btn" class="ui teal basic button">发布</button>
+            </div>
+</form>
+
+</div>
+</div>
+
+
+<!-- 底部 -->
+<!--底部footer-->
+<footer th:replace="admin/_fragments :: footer" class="ui inverted vertical  segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../../static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 140px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin m-opacity-mini">用户故事（User Story）</a>
+                    <a href="#" class="item m-text-thin m-opacity-mini">用户故事（User Story）</a>
+                    <a href="#" class="item m-text-thin m-opacity-mini">用户故事（User Story）</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin m-opacity-mini">QQ: 614472308</a>
+                    <a href="#" class="item m-text-thin m-opacity-mini">WeChat: 13286626191</a>
+                    <a href="#" class="item m-text-thin m-opacity-mini">Email：614472308@qq.com</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+                <p class="m-text-thin m-text-spaced m-text-opacity-mini">
+                    这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...
+                </p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny m-opacity-tiny">Copyright © 2019 YipChungWing
+            Designed by
+            YipChungWing</p>
+    </div>
+
+</footer>
+<!--/*/<th:block th:replace="admin/_fragments :: script">/*/-->
+<script src="../../static/js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="../../static/lib/editormd/editormd.js"></script>
+<script type="text/javascript" src="../../static/js/mouse-effect.js"></script>
+<!--/*/</th:block>/*/-->
+<script th:inline="javascript">
+    //初始化Markdown编辑器
+    var contentEditor;
+    $(function () {
+        contentEditor = editormd("md-content", {
+            width: "100%",
+            height: 640,
+            syncScrolling: "single",
+            path: "/lib/editormd/lib/"
+        });
+    });
+    $('.ui.dropdown')
+        .dropdown({
+            on: 'hover'
+        })
+    ;
+    $('.ui.checkbox')
+        .checkbox()
+    ;
+
+    //条件校验
+    $('.ui.form').form({
+        fields: {
+            // 标题
+            title: {
+                identifier: 'title',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入标题',
+                }
+                ]
+            },
+            // 内容
+            content: {
+                identifier: 'content',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入内容',
+                }
+                ]
+            },
+            // 图片
+            firstPicture: {
+                identifier: 'firstPicture',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请添加图片引用地址',
+                }
+                ]
+            },
+            //分类
+            type: {
+                identifier: 'type',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请选择分类',
+                }
+                ]
+            },
+            // 标签
+            tag: {
+                identifier: 'tag',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请选择标签',
+                }
+                ]
+            },
+        }
+    });
+    $('#save-btn').click(function () {
+        $('[name="published"]').val(false);
+        $('#blog-form').submit();
+    });
+    $('#publish-btn').click(function () {
+        $('[name="published"]').val(true);
+        $('#blog-form').submit();
+    });
+    function postFile() {
+        let formData = new FormData();
+        formData.append("file",$('#file')[0].files[0]);
+        //formData.attr('enctype','multipart/form-data');
+        $.ajax({
+            url:/*[[@{/admin/blogs/upload}]]*/"", /*接口域名地址*/
+            type:'post',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success:function(res){
+                  console.log(res);
+                  $('#firstPicture').val(res);
+            }
+        })
+    }
+
+</script>
+</body>
+
+</html>

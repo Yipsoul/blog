@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/main.css">
+    <link rel="stylesheet" href="../../static/css/animate.css">
+
+    <title>500</title>
+</head>
+
+<body>
+<nav th:replace="_fragments :: menu(1)"
+     class="ui inverted attached segment m-padded-tb-mini m-shadow-small animated fadeInDown">
+    <div class="ui  container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">YipSouL</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini clone outline icon"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="user circle icon"></i>关于我</a>
+            <!-- 搜索框 -->
+            <div class="m-item right item m-mobile-hide">
+                <div class="ui icon inverted transparent input ">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+            <a href="#" class="m-button ui black icon button m-right-top m-mobile-show">
+                <i class="sidebar icon"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="m-container-small m-padded-tb-massive animated flipInX">
+    <div class="ui error message m-padded-tb-big">
+        <div class="ui container">
+            <h2>500</h2>
+            <p>对不起，服务器异常。请稍后刷新再试！！！</p>
+            <h3>点击 <a href="#" th:href="@{/}">这里</a> 返回首页</h3>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer th:replace="_fragments :: foot" class="ui inverted vertical segment m-padded-tb-massive ">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" class="ui rounded image"
+                             alt="" style="width: 140px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin m-opacity-mini">用户故事（User Story）</a>
+                    <a href="#" class="item m-text-thin m-opacity-mini">用户故事（User Story）</a>
+                    <a href="#" class="item m-text-thin m-opacity-mini">用户故事（User Story）</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin m-opacity-mini">QQ: 614472308</a>
+                    <a href="#" class="item m-text-thin m-opacity-mini">WeChat: 13286626191</a>
+                    <a href="#" class="item m-text-thin m-opacity-mini">Email：614472308@qq.com</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+                <p class="m-text-thin m-text-spaced m-text-opacity-mini">
+                    这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...
+                </p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny m-opacity-tiny">Copyright © 2019 YipChungWing
+            Designed by
+            YipChungWing</p>
+    </div>
+
+</footer>
+
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<script src="../../static/js/jquery.min.js"/>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script type="text/javascript" src="../../static/js/mouse-effect.js"></script>
+<!--/*/</th:block>/*/-->
+<script>
+    $('.m-button').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    })
+</script>
+</body>
+
+</html>

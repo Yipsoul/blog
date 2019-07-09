@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/main.css">
+    <link rel="stylesheet" href="../../static/css/animate.css">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css">
+    <title>标签管理</title>
+</head>
+
+<body>
+<!-- 背景音乐 -->
+<!-- <audio src="./bg.mp3" autoplay loop></audio> -->
+<!-- 导航 -->
+<nav th:replace="admin/_fragments :: menu(3)"
+     class="ui inverted raised segment m-padded-tb-mini m-shadow-small animated fadeInDown">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">YipSouL</h2>
+            <a href="#" class="active m-item item m-mobile-hide"><i class="mini home icon"></i>博客</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+            <!-- 头像框 -->
+            <div class="right m-item m-mobile-hide menu">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img class="ui avatar image" src="https://unsplash.it/id/1027/100/100">
+                        YipSouL
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item">
+                            <i class="sign out icon"></i>
+                            <a href="#" class=" m-text-thin m-opacity-mini" style="color: teal">注销</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</nav>
+<!-- 发布列表 -->
+<div class="ui attached pointing menu animated bounceInUp">
+    <div class="ui container">
+        <div class="right menu">
+            <a href="#" th:href="@{input}" class="teal active item">新增</a>
+            <a href="#" th:href="@{list}" class="item">列表</a>
+        </div>
+    </div>
+</div>
+<!-- 内容 -->
+<div class="m-container-small m-padded-tb-large animated bounceInUp">
+    <div class="ui container">
+        <!-- 表单 -->
+        <form action="" class="ui form" method="POST"  th:action="@{/admin/tags/add}" th:object="${tag}">
+            <input type="hidden" name="id" th:value="${tag.id}">
+            <!-- 标题 -->
+            <!-- 图片 -->
+            <div class="field">
+                <div class="ui left action labeled input">
+                    <label class="ui teal basic label">标签</label>
+                    <input type="text" id="tag" name="tagName" placeholder="请输入标签" th:value="*{tagName}">
+                </div>
+
+            </div>
+            <div class="ui error message"></div>
+            <!--/*/
+            <div class="ui error message" th:if="${#fields.hasErrors('tagName')}">
+            <i class="close icon"></i>
+            <div class="header">提示：</div>
+            <p th:errors="*{tagName}">恭喜，操作成功！</p>
+            </div>
+            /*/-->
+            <!-- 提交按钮 -->
+            <div class="ui right aligned container">
+                <button class="ui basic button" onclick="window.history.go(-1)">返回</button>
+                <button class="ui primary basic button" type="submit">保存</button>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- 底部 -->
+<!--底部footer-->
+<footer th:replace="admin/_fragments :: footer" class="ui inverted vertical  segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../../static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 140px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin m-opacity-mini">用户故事（User Story）</a>
+                    <a href="#" class="item m-text-thin m-opacity-mini">用户故事（User Story）</a>
+                    <a href="#" class="item m-text-thin m-opacity-mini">用户故事（User Story）</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin m-opacity-mini">QQ: 614472308</a>
+                    <a href="#" class="item m-text-thin m-opacity-mini">WeChat: 13286626191</a>
+                    <a href="#" class="item m-text-thin m-opacity-mini">Email：614472308@qq.com</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+                <p class="m-text-thin m-text-spaced m-text-opacity-mini">
+                    这是我的个人博客、会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助...
+                </p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny m-opacity-tiny">Copyright © 2019 YipChungWing
+            Designed by
+            YipChungWing</p>
+    </div>
+
+</footer>
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+<script>
+    //条件校验
+    $('.ui.form').form({
+        fields: {
+            //分类
+            type: {
+                identifier: 'tag',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请选择标签',
+                }
+                ]
+            }
+        }
+    });
+</script>
+</body>
+
+</html>
