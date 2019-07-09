@@ -4,7 +4,7 @@ spring:
     encoding: UTF-8
     mode: HTML5
   profiles:
-    active: dev #自定义使用开发环境或生产环境，
+    active: pro #自定义使用开发环境或生产环境，
   mvc:
     favicon:
       enabled: false
