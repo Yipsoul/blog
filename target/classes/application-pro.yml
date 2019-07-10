@@ -33,6 +33,6 @@ file.staticAccessPath: /api/file/**
 #文件上传目录（注意Linux和Windows上的目录结构不同）
 #file.uploadFolder=/root/uploadFiles/
 file.uploadFolder: /www/server/blog/images/
-myblog.url: www.yipsoul.cn #上传图片时回显的路径
+myblog.url: http://www.yipsoul.cn #上传图片时回显的路径
 
 

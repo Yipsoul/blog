@@ -1,6 +1,6 @@
 spring:
   thymeleaf:
-    cache: false #关闭模版引擎缓存，否则测试没效果
+    cache: false #修改网页时请关闭模版引擎缓存，否则测试没效果
     encoding: UTF-8
     mode: HTML5
   profiles:
