@@ -1,10 +1,10 @@
 spring:
   thymeleaf:
-    cache: false #修改网页时请关闭模版引擎缓存，否则测试没效果
+    cache: true #修改网页时请关闭模版引擎缓存，否则测试没效果
     encoding: UTF-8
     mode: HTML5
   profiles:
-    active: dev #自定义使用开发环境或生产环境，
+    active: pro #自定义使用开发环境或生产环境，
   mvc:
     favicon:
       enabled: false

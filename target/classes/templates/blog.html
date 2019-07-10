@@ -803,7 +803,7 @@
             on: 'click',
         })
     ;
-    var serverurl = /*[[#{my.url}]]*/"127.0.0.1:8080";
+    var serverurl = "http://"+/*[[#{my.url}]]*/"127.0.0.1:8080";
     var url = /*[[@{/blog/} + ${blog.id}]]*/"";
     let qrcode = new QRCode("qrcode", {
         text: serverurl+url,
