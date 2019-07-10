@@ -13,15 +13,28 @@
 -	MySQL
 
 ### 四.功能简介
-**主要简单介绍下后台功能**
+**前台功能**
 
-- 博客管理：增删改查
-- 标签管理：增伤改查
-- 分类管理：增删改查
-- 博客后台管理：使用拦截器进行登录拦截
-- 日志记录：使用AOP与自定义注解进行对用户每次访问浏览数据的记录
-- 异常处理：使用springmvc的自定义异常处理，可在源码里的枚举自定义异常
-- 表单重复提交：用户评论时提交表单可能因为各种网络因素导致重复提交，使用redis与自定义注解，对指定的提交表单接口在指定时间内不可重复提交
+-	博客编辑器 ：开源Markdown编辑器 [Editor.md](https://pandao.github.io/editor.md/)
+-	中文网页的排版 ： [typo.css](https://github.com/sofish/typo.css)
+-	博客内容代码块语法高亮显示 ：[Prism.js](https://github.com/PrismJS/prism)
+-	博客目录生成 ：[tocbot.js](https://tscanlin.github.io/tocbot/)
+-	博客二维码生成 ：[qrcode.js](https://davidshimjs.github.io/qrcodejs/)
+-	页面动画效果 ：[animate.css](https://daneden.github.io/animate.css/)
+-	页面滚动检测 ： [waypoint.js](https://github.com/imakewebthings/waypoints)
+-	页面平滑滚动 ： [jquery.scrollTo](https://github.com/flesler/jquery.scrollTo)
+-   PC端页面地板娘动画人物 ：[github地址](https://github.com/Yipsoul/live2d-widget)
+
+**以上就是前端网页展示功能，对于我这种前端大捞比来说有这么多好用的第三方插件真是太好了，哈哈，在此还得感谢一波我们大前端工程师郑某阳的技术大力支持。**
+**后台功能**
+
+- 博客管理 ：增删改查
+- 标签管理 ：增删改查
+- 分类管理 ：增删改查
+- 博客后台管理 ：使用拦截器进行登录拦截
+- 日志记录 ：使用AOP与自定义注解进行对用户每次访问浏览数据的记录
+- 异常处理 ：使用springmvc的自定义异常处理，可在源码里的枚举自定义异常
+- 表单重复提交 ：用户评论时提交表单可能因为各种网络因素导致重复提交，使用redis与自定义注解，对指定的提交表单接口在指定时间内不可重复提交
 - 防脚本网站访问攻击：简单的使用redis记录每个用户的请求次数，在指定时间内超过该次数则抛出异常
 **以上就是后台功能的全部内容，十分简单，就不再多概述了，源码有注释，也比较语义化。**
 ---
